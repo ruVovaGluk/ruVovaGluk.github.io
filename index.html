@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простой сайт-карточка</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .text-top, .text-bottom {
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        /* Стили для центрального блока */
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="text-top">
+        Приложения на Rustore:
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/80" alt="Иконка">
+        <h2>Название проекта</h2>
+        <p>Короткое описание вашего замечательного проекта или сервиса, которое объясняет суть в паре предложений.</p>
+        <a href="https://google.com" target="_blank">Перейти по ссылке</a>
+    </div>
+    <div class="text-bottom">
+        VovaGluk 2026
+      Контакты:
+      mrglukigluk@gmail.com
+    </div>
+
+</body>
+</html>
